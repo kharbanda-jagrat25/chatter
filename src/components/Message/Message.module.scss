@@ -1,0 +1,27 @@
+@import "../../styles/index.scss";
+
+.MainContainer {
+    border-top: 1px dashed $light_gray;
+    .SenderContainer {
+        margin-top: 1em;
+        .Sender {
+            margin-left: 0.5em;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+        .Time {
+            color: $dark_gray;
+            font-weight: 600;
+            margin-right: 0.5em;
+            text-transform: uppercase;
+        }
+        a {
+            font-weight: 500;
+        }
+    }
+    .Text {
+        font-weight: 500;
+        padding: 1em 0;
+        color: $dark_gray;
+    }
+}

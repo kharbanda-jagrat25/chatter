@@ -1,0 +1,46 @@
+@import "../../styles/index.scss";
+
+@mixin Btn {
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    border: 0.5px solid $light_gray;
+}
+
+.MainContainer {
+    height: 100%;
+
+    .Heading {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0.9em;
+    }
+
+    .Label {
+        font-size: 20px;
+        font-weight: 500;
+        color: $theme_gray;
+        margin-bottom: 1em;
+    }
+
+    .InputContainer {
+        margin-bottom: 1em;
+
+        input {
+            margin-right: 5px;
+            border: 1px solid $light_gray;
+        }
+
+        .PostBtn {
+            @include Btn;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .DelBtn {
+            @include Btn;
+            font-weight: 700;
+            color: $theme_red;
+        }
+    }
+}
